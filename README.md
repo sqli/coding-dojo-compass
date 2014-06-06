@@ -1,15 +1,16 @@
 coding-dojo-compass
 =====================
 
-How to do a cross brower web site.
+Compass tutorial.
 
 ## Software dependencies (install)
 -	[Node.js](http://nodejs.org/)
+-	[Ruby](https://www.ruby-lang.org/)
+-	[Compass](http://compass-style.org/)
 
 ## Launch :
 -	npm install -g grunt ([Grunt](http://gruntjs.com/))
 -	npm install
--	bower install
 -	grunt server
 
 ## Lessons :
