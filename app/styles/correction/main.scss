@@ -1,0 +1,18 @@
+@import "compass";
+
+@import "variables";
+@import "mixins";
+
+body {
+  font-family: "Helvevtica", sans-serif;
+  .container {
+
+    .panel {
+      @include panel($blue);
+    }
+
+    .panel.urgent {
+      @include panel($red);
+    }
+  }
+}

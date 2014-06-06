@@ -1,0 +1,60 @@
+@import "compass";
+
+@mixin panel-part() {
+  padding: 10px;
+}
+
+$border-color: #7f7f7f;
+$blue-hover: #64adec;
+$panel-background-color: whitesmoke;
+$blue: #428bca;
+$red: red;
+
+body {
+  font-family: "Helvevtica", sans-serif;
+  .container {
+
+    .panel {
+      width: 400px;
+      margin: 20px;
+      background-color: $panel-background-color;
+      float: left;
+      border: solid $border-color 1px;
+      @include border-radius(4px);
+
+      &:hover {
+        @include box-shadow($blue-hover 5px 5px 20px);
+        .header {
+          background-color: $blue-hover;
+        }
+      }
+
+      .body {
+        @include panel-part();
+        li.important {
+          color: $red;
+        }
+        li.very-important {
+          @extend .important;
+          font-weight: bold;
+        }
+      }
+
+      .header {
+        @include panel-part();
+        background-color: $blue;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+      }
+
+      .footer {
+        @include panel-part();
+        border-top: solid $border-color 1px;
+        font-size: smaller;
+        text-align: right;
+        @include border-radius(4px);
+      }
+    }
+  }
+}

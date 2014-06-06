@@ -1,0 +1,51 @@
+@import "compass";
+
+body {
+  font-family: "Helvevtica", sans-serif;
+  .container {
+
+    .panel {
+      width: 400px;
+      margin: 20px;
+      background-color: lightgray;
+      float: left;
+      border: solid black 1px;
+      @include border-radius(4px);
+
+
+      &:hover {
+        @include box-shadow(blue 5px 5px 20px);
+        .header {
+           background-color: blue;
+         }
+      }
+
+      .body {
+        padding: 10px;
+        li.important {
+          color: red;
+        }
+        li.very-important {
+          color: red;
+          font-weight: bold;
+        }
+      }
+
+      .header {
+        padding: 10px;
+        background-color: blue;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+      }
+
+      .footer {
+        padding: 10px;
+        border-top: solid black 1px;
+        font-size: smaller;
+        text-align: right;
+        @include border-radius(4px);
+      }
+    }
+  }
+}
