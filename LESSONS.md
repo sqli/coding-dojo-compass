@@ -5,19 +5,19 @@ Exercices coding dojo Compass
 - Ex 1 : Créer le fichier main.scss, vérifier la transcription main.css
 - Ex 2 : Styliser les panels :
     - bords arrondis
-    - largueur de 400
+    - largeur de 400
     - position à gauche
-    - header : fond bleu, en capitales et gras, écriture en blanc
-    - footer : bords arrondis, écriture petite à gauche
-    - body : element important en rouge, et very-important, rouge et gras
-- Ex 3 : hover sur le panel : ombrage bleu ou rouge sur les panels urgents
+    - header : fond bleu, en capitales et gras, écriture en blanc, padding à 10
+    - footer : bords arrondis, écriture petite à gauche, padding à 10
+    - body : élément "important" en rouge, et "very-important" en rouge et gras, padding à 10
+- Ex 3 : hover sur le panel : ombrage bleu
 - Ex 4 : variabiliser!
     - $border-color: #7f7f7f;
     - $blue-hover: #64adec;
     - $panel-background-color: whitesmoke;
     - $blue: #428bca;
     - $red: red;
-- Ex 5 : héritage : important / very-important
+- Ex 5 : héritage : "important" / "very-important"
 - Ex 6 : factoriser panel-part (padding)
 - Ex 7 : Sur les panels urgents, le fond header est rouge et devient bleu sur le hover
 - Ex 8 : factoriser les panels : panel(color)
