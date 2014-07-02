@@ -8,7 +8,7 @@ Compass tutorial.
 -	[Ruby](https://www.ruby-lang.org/)
 -	[Compass](http://compass-style.org/)
 
-## Launch :
+## Getting started
 -	npm install -g grunt ([Grunt](http://gruntjs.com/))
 -	npm install
 -	grunt server
